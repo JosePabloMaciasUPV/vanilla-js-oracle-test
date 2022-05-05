@@ -1,0 +1,115 @@
+body {
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    position: relative;
+}
+profile-card{
+    position: relative;
+    display:block;
+    width: auto;
+}
+
+img {
+    display: block;
+}
+@media screen and (orientation: portrait){
+    .avatar {   
+        position:absolute;
+        left: 3vw;
+        top: 20vh;
+        border: 3px solid #7E9CC2;
+        border-radius: 50%;
+        width: 30vw;
+        height: 30vw;
+        min-width: 20vw;
+        min-height: 20vw;
+        max-height: 30vh;
+    }
+    
+    .background_image_profile{
+        width: 100%;
+        max-height: 30vh;
+    }
+    
+    .card-header{
+        margin-top: 5px;
+        position:absolute;
+        left:38%; 
+        color: black;
+        font-size: 2vh;
+        line-height: 3vh; margin:0;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    .card-name{
+        font-weight: bold;   
+    }
+    .card-profession{
+         font-weight: normal; 
+    }
+    .card-services{
+        color:#424242; font-weight: lighter;
+    }
+    
+    .card-body{
+        position:absolute;
+        top:48vh;
+        margin:10px 10px 10px 10px;
+    }
+    .card-content{
+        font-family: 'Source Sans Pro', sans-serif;
+        color: #7c795d;
+        font-size: 2vh; font-weight: normal; line-height: 3vh; margin: 0;
+    }
+}
+
+@media screen and (orientation: landscape){
+    .avatar {   
+        position:absolute;
+        left: 5vw;
+        top: 20vh;
+        border: 3px solid #7E9CC2;
+        border-radius: 50%;
+        width: 20vw;
+        height: 20vw;
+        min-width: 10vw;
+        min-height: 10vw;
+        max-height: 30vh;
+    }
+    
+    .background_image_profile{
+        width: 100%;
+        max-height: 40vh;
+    }
+    
+    .card-header{
+        margin-top: 5px;
+        position:absolute;
+        left:28%; 
+        color: black;
+        font-family: 'Source Sans Pro', sans-serif; font-size: 3vw;
+        line-height: 6vh;
+    }
+    .card-name{
+        font-weight: bold; 
+    }
+    .card-profession{
+        font-weight: normal;
+    }
+    .card-services{
+        color:#424242;
+        font-weight: lighter;
+    }
+    
+    .card-body{
+        position:absolute;
+        top:60vh;
+        margin:10px 10px 10px 10px;
+    }
+    .card-content{
+        font-family: 'Source Sans Pro', sans-serif;
+        color: #7c795d;
+        font-size: 3vw; font-weight: normal; line-height: 6vh; margin: 0;
+    }
+
+}
