@@ -1,10 +1,15 @@
 Explanation:
+
 Trying to share our presentation card or profile card between webpages using Iframe HTML tag,
 we can share or customize the details of our card.
 
 How to use:
+
 ºDeploy the index.html file and the css,javascript folders in a hosting service, (no server needed),
+
 ºadd the tag iframe and send encoded params in the request URL of the src atribute.
+
+
 <iframe src="https://yourdomain.com/
 ?name=especifyYourName(Encoded)
 &profession=especifyYourProfession(Encoded)
@@ -14,7 +19,10 @@ How to use:
 &background=BackgroundImageFromURL(Encoded)
 ">
 
+  
 Check this example:
+  
+  
 <iframe 
 width="400"
 height="600" 
@@ -25,19 +33,31 @@ src="http://localhost:3000/
 &services=Software%20Developer,%20Consoultant,%20Entrepreneur.
 &profession=Software%20Engineer%20Principal" id="a"></iframe>
 
+  
 How to test the application?
+  
 ºUsing node from comand line start the file "node_server.js"
+  
 ºUsing node from comand line start the file "selenium_test.js"
+  
 
 
 Requirements:
+  
 For running the selenium tests you have the next:
+  
 -Dependency "selenium-webdriver": "^4.1.2"
+  
 -Chrome version 101.0.4951.41
+  
 
+  
 For run local node server.
+  
 -Have free the port 3000.
+  
 -No dependencies needed.
+  
 
 
 
