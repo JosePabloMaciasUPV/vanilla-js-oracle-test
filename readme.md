@@ -59,6 +59,16 @@ For run local node server.
 -No dependencies needed.
   
 
+Examples:
+Hosting from github pages, no params especifed:
+https://josepablomaciasupv.github.io/vanilla-js-oracle-test/ 
+
+Hosting from github pages, params included:
+https://josepablomaciasupv.github.io/vanilla-js-oracle-test/?profile=https://free-images.com/sm/a312/man_serious_senior_portrait.jpg%20&background=https://free-images.com/md/da3b/lake_minnewanka_11092005.jpg%20&content=Senior%20software%20developers%20are%20responsible%20for%20designing,%20testing,%20and%20implementing%20new%20and%20updated%20software%20programs.%20They%20take%20on%20a%20managerial%20role%20and%20lead%20the%20development%20team%20with%20all%20software%20development%20tasks.%20Their%20job%20is%20to%20ensure%20all%20projects%20are%20completed%20on%20time%20and%20to%20company%20specifications.&name=Derek%20J.%20Payton%20&services=Software%20Developer,%20Consoultant,%20Entrepreneur.%20&profession=Software%20Engineer%20Principal%22
+
+
+
+
 
 
 
