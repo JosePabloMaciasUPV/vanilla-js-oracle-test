@@ -11,13 +11,23 @@ let extractParams=()=>{
     return map1;
 }
 
-const map1=extractParams();
-console.log(map1)
+if(document.baseURI.indexOf('?')>-1){
+    const map1=extractParams();
+    let nameHeader=document.getElementsByClassName('card-name')[0];
+    map1.get('name') ? nameHeader.innerHTML=map1.get('name') : nameHeader.innerHTML="Invalid Entry";
+    
+    let professionHeader=document.getElementsByClassName('card-profession')[0];
+    map1.get('profession') ? professionHeader.innerHTML=map1.get('profession') :professionHeader.innerHTML="Invalid Entry";
 
+    let servicesHeader=document.getElementsByClassName('card-services')[0];
+    map1.get('services') ? servicesHeader.innerHTML=map1.get('services') : servicesHeader.innerHTML="Invalid Entry";
 
-document.getElementsByClassName('card-name')[0].innerHTML=map1.get('name');
-document.getElementsByClassName('card-profession')[0].innerHTML=map1.get('profession');
-document.getElementsByClassName('card-services')[0].innerHTML=map1.get('services');
-document.getElementsByClassName('card-content')[0].innerHTML=map1.get('content');
-document.getElementById('background').setAttribute('src',map1.get('background'));
-document.getElementById('avatar').setAttribute('src',map1.get('profile'));
+    let contentBody=document.getElementsByClassName('card-content')[0];
+    map1.get('content') ? contentBody.innerHTML=map1.get('content'): contentBody.innerHTML="Invalid Entry";
+
+    let backgroundImage=document.getElementById('background');
+    backgroundImage.setAttribute('src',map1.get('background'));
+    
+    let avatarImage=document.getElementById('avatar');
+    avatarImage.setAttribute('src',map1.get('profile'));
+}

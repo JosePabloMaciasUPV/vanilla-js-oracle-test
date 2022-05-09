@@ -4,14 +4,18 @@
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <link href="css/profile_card.css" rel="stylesheet"/>
+  <script language="JavaScript" type="text/javascript" src="js/image_control.js">
+</script>
   <title>Card</title>
 </head>
 <body>
     <header></header>
     <section id="main">
         <profile-card >     
-            <img id="background" src="https://free-images.com/md/4fa7/football_american_player_runner_0.jpg" class="background_image_profile" alt="star">
-            <img id="avatar" src="https://free-images.com/sm/7d71/football_american_football_game_1.jpg" class="avatar" alt="avatar">
+            <img id="background" src="https://free-images.com/md/4fa7/football_american_player_runner_0.jpg" class="background_image_profile" alt="background"
+            onerror="javascript: imageDoNotLoad('background')" />
+            <img id="avatar" src="https://free-images.com/sm/7d71/football_american_football_game_1.jpg" class="avatar" alt="avatar"
+            onerror="javascript: imageDoNotLoad('avatar')" />
             <div class="card-header">
             <div class="card-name">Joey S. Williams </div> 
             <div class="card-profession">Football Player in United States League </div> 
